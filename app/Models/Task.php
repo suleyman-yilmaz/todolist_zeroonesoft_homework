@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
     use HasFactory;
-    protected $fillable = ['task', 'status'];
-    public $timestamps = false;
+    protected $fillable = ['task', 'status']; // zorunlu olarak değişecek alanların tanımlanması
+    public $timestamps = false; // timestamps alanının kullanılmayacağını belirtir (created_at ve updated_at alanları)
 }
